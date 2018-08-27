@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Ui Input Control</string>
+    <string name="ui_design">UI DESIGN</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="select_language">Select language</string>
+    <string name="english">English</string>
+    <string name="hindi">Hindi</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="select_your_age">Select your age</string>
+    <string name="save">SAVE</string>
+    <string name="off">OFF</string>
+    <string name="on">ON</string>
+    <string name="edit_off">Edit off</string>
+    <string name="edit_on">Edit on</string>
+    <string name="switch_button">Switch Button</string>
+    <string name="progress_button">Progress Button</string>
+    <string name="exit">Exit</string>
+    <string name="toggle_button">ToggleButton</string>
+
+    <string-array name="spinner_age_array">
+        <item>Select item</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+    </string-array>
+</resources>

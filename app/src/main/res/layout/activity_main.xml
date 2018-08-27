@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Ui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/ui_design"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Ui"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="167dp"
+        android:ems="10"
+        android:hint="@string/enter_your_name"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textViewLanuage"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/Ui"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="217dp"
+        android:text="@string/select_language"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/checkBoxEng"
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewLanuage"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="102dp"
+        android:text="@string/english" />
+
+    <CheckBox
+        android:id="@+id/checkBoxHin"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewLanuage"
+        android:layout_alignEnd="@+id/Ui"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="15dp"
+        android:text="@string/hindi" />
+
+    <TextView
+        android:id="@+id/textViewGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Ui"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="165dp"
+        android:text="@string/gender"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBoxEng"
+        android:layout_alignTop="@+id/textViewGender"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonMale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/male" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+
+            android:text="@string/female" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Ui"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="202dp"
+        android:text="@string/select_your_age"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonAlart"
+        android:layout_alignEnd="@+id/Ui"
+        android:layout_alignBottom="@+id/buttonAlart"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="167dp"
+        android:layout_marginBottom="0dp"
+        android:text="@string/save" />
+
+    <Spinner
+        android:id="@+id/spinnerAge"
+        android:layout_width="149dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBoxEng"
+        android:layout_alignBottom="@+id/textViewAge"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="2dp"
+        android:dropDownWidth="150dp" />
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewGender"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2dp"
+        android:max="100"
+        android:min="1"
+        android:layout_marginBottom="367dp" />
+
+    <Switch
+        android:id="@+id/switchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/checkBoxHin"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="-16dp"
+        android:text="@string/switch_button" />
+
+    <Button
+        android:id="@+id/buttonAlart"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_alignStart="@+id/textViewGender"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="429dp"
+        android:onClick="openAlert"
+        android:text="@string/exit" />
+
+    <Button
+        android:id="@+id/buttonProg"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonSave"
+        android:layout_alignEnd="@+id/editTextName"
+        android:layout_alignBottom="@+id/buttonSave"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="-1dp"
+        android:onClick="openProgress"
+        android:text="@string/progress_button" />
+
+    <ToggleButton
+        android:id="@+id/toggleOnOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonSave"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="383dp"
+        android:layout_toStartOf="@+id/buttonProg"
+        android:text="@string/toggle_button" />
+
+    <TextView
+        android:id="@+id/textViewSeekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-367dp" />
+
+</RelativeLayout>
